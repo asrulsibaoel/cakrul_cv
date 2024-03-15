@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <!-- <header>
     <img src="@/assets/note.png" alt="" />
     <nav>
       <h1 class="app-name">
@@ -13,6 +13,19 @@
       Log In
     </button>
     <button v-else class="button-74" @click="authStore.logout()">Logout</button>
+  </header> -->
+  <header>
+      <button class="btn btn-white btn-share ml-auto mr-3 ml-md-0 mr-md-auto"><img src="/src/assets/images/share.svg" alt="share" class="btn-img">
+          SHARE</button>
+      <nav class="collapsible-nav" id="collapsible-nav">
+          <a href="/" class="nav-link active">HOME</a>
+<!--            <a href="/resume" class="nav-link {% if is_resume == True %}active {% endif %}">RESUME</a>-->
+<!--            <a href="/portfolio" class="nav-link {% if is_portfolio == True %}active {% endif %}">PORTFOLIO</a>-->
+<!--            <a href="/blog" class="nav-link {% if is_blog == True %}active {% endif %}">BLOG</a>-->
+          <a href="/contact" class="nav-link active">CONTACT</a>
+      </nav>
+      <button class="btn btn-menu-toggle btn-white rounded-circle" data-toggle="collapsible-nav"
+          data-target="collapsible-nav"><img src="/src/assets/images/hamburger.svg" alt="hamburger"></button>
   </header>
 </template>
 
@@ -26,7 +39,7 @@ const authStore = useAuthStore();
 const loggedIn = computed(() => authStore.isAuthenticated);
 </script>
 
-<style scoped>
+<!-- <style scoped>
 * {
   font-family: "Kalam", cursive;
 }
@@ -107,4 +120,4 @@ header img {
     margin-left: 10px;
   }
 }
-</style>
+</style> -->

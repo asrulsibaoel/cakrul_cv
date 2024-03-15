@@ -3,7 +3,7 @@
     <TheTasks />
   </template>
   <template v-else>
-    <TheDashboard />
+    <TheCV />
   </template>
 </template>
 
@@ -15,6 +15,7 @@ import { defineAsyncComponent } from "vue";
 import { useAuthStore } from "@/store/authStore";
 
 const TheDashboard = defineAsyncComponent(() => import("./TheDashboard.vue"));
+const TheCV = defineAsyncComponent(() => import("./TheCV.vue"));
 const TheTasks = defineAsyncComponent(() => import("./TheTasks.vue"));
 
 const authStore = useAuthStore();

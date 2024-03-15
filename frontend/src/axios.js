@@ -1,9 +1,12 @@
 import axios from "axios";
 import { useAuthStore } from "@/store/authStore.js";
 
+
+const BASE_URL = "http://localhost:8000/";
+
 // axios interceptor for specific URL - instance
 const axiosInstance = axios.create({
-  baseURL: import.meta.env.VITE_API_ENDPOINT,
+  baseURL: BASE_URL,
 });
 
 

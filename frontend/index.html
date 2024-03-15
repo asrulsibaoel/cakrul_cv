@@ -1,21 +1,117 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="description" content="Sticky notes designed to-do list app. Simple to use" />
-  <meta name="keywords" content="To-do app sticky notes styled" />
-
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <meta name="google-site-verification" content="JERuxFSR5ai527h8Xg7hIUhI3djWSVNCOhVQuvnwsRI" />
-  <link rel="icon" href="logo.png" />
-  <title>To-do app</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello there! It's Me Cakrul</title>
+    <link href="https://fonts.googleapis.com/css?family=Mukta:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/assets/vendors/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/src/assets/css/live-resume.css">
 </head>
 
 <body>
-  <div id="app"></div>
-  <script type="module" src="/src/main.js"></script>
+  <header>
+      <button class="btn btn-white btn-share ml-auto mr-3 ml-md-0 mr-md-auto"><img src="/src/assets/images/share.svg" alt="share" class="btn-img">
+          SHARE</button>
+      <nav class="collapsible-nav" id="collapsible-nav">
+          <a href="/" class="nav-link active">HOME</a>
+  <!--            <a href="/resume" class="nav-link {% if is_resume == True %}active {% endif %}">RESUME</a>-->
+  <!--            <a href="/portfolio" class="nav-link {% if is_portfolio == True %}active {% endif %}">PORTFOLIO</a>-->
+  <!--            <a href="/blog" class="nav-link {% if is_blog == True %}active {% endif %}">BLOG</a>-->
+          <a href="/contact" class="nav-link active">CONTACT</a>
+      </nav>
+      <button class="btn btn-menu-toggle btn-white rounded-circle" data-toggle="collapsible-nav"
+          data-target="collapsible-nav"><img src="/src/assets/images/hamburger.svg" alt="hamburger"></button>
+  </header>
+  <div class="content-wrapper">
+    <aside>
+        <div class="profile-img-wrapper">
+            <img src="/src/assets/images/me-low-res.jpg" alt="profile">
+        </div>
+        <h1 class="profile-name">Asrul Sani Ariesandy</h1>
+        <div class="text-center">
+            <span class="badge badge-white badge-pill profile-designation">Software Engineer</span>
+        </div>
+        <nav class="social-links">
+            <a href="https://facebook.com/sijomblokaratan" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/asrulsibaoel" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/asrulsibaoel" class="social-link"><i class="fab fa-github"></i></a>
+        </nav>
+        <div class="widget">
+            <h5 class="widget-title">Personal Information</h5>
+            
+            <div class="widget-content">
+
+                <table>
+                    <tbody style="padding-left:10px; padding-right:10px">
+                        <tr>
+                            <td>BRITHDAY</td>
+                            <td>:</td>
+                            <td>December 1, 1994</td>
+                        </tr>
+                        <tr>
+                            <td>PHONE</td>
+                            <td>:</td>
+                            <td>(+62) 896-4929-2510</td>
+                        </tr>
+                        <tr>
+                            <td>EMAIL</td>
+                            <td>:</td>
+                            <td>asrulsibaoel@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;">ADDRESS</td>
+                            <td style="vertical-align: top;">:</td>
+                            <td>Malang, Indonesia</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="card-body">
+                    <a class="btn btn-download-cv btn-primary rounded-pill" href="/src/files/cv_asrul_march_2021.pdf">
+                        <img src="/src/assets/images/download.svg" alt="download" class="btn-img"/>DOWNLOAD CV
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="widget card">
+            <div class="card-body">
+                <div class="widget-content">
+                    <h5 class="widget-title card-title">LANGUAGES</h5>
+                    <p>Bahasa Indonesia : native</p>
+                    <p>English : fluent</p>
+                    <p>Javanese : native</p>
+                </div>
+            </div>
+        </div>
+        <div class="widget card">
+            <div class="card-body">
+                <div class="widget-content">
+                    <h5 class="widget-title card-title">INTERESTS</h5>
+                    <p>Games</p>
+                    <p>Crypto Currency</p>
+                    <p>Machine Learning</p>
+                    <p>Cooking</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <main>
+      <div id="app">
+
+      </div>
+      <script type="module" src="/src/main.js"></script>
+      
+    </main>
+  </div>
+  <footer>Live Resume @ <a href="https://www.bootstrapdash.com" target="_blank"
+    rel="noopener noreferrer">BootstrapDash</a>. All Rights Reserved 2024</footer>
+  
+  <script src="/src/assets/vendors/jquery/dist/jquery.min.js"></script>
+  <script src="/src/assets/vendors/@popperjs/core/dist/umd/popper-base.min.js"></script>
+  <script src="/src/assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/src/assets/js/live-resume.js"></script><script type="module" src="/src/main.js"></script>
 
 </body>
 
@@ -25,39 +121,9 @@
   @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap");
 
   body,
-  #app {
+  footer {
     margin: 0px;
-    background-color: #ffffed;
-  }
-
-  /* STYLING CALENDAR */
-  .dp__main .dp__theme_light {
-    flex-grow: 1;
-    margin: 0px 10px;
-    font-family: "Kalam", cursive;
-    margin-bottom: 10px;
-  }
-
-  .dp__calendar {
-    width: 100%;
-  }
-
-  .dp__calendar_header {
-    width: 100%;
-  }
-
-  .dp__calendar_header_item {
-    margin-left: 10px;
-    margin-right: 0px;
-    text-align: left;
-  }
-
-  .dp__calendar_row {
-    margin-left: 10px;
-  }
-
-  .dp__calendar_header_item,
-  .dp__calendar_row {
-    font-family: "Kalam";
+    padding-top: 10px;
+    text-align: center;
   }
 </style>

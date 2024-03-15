@@ -1,13 +1,9 @@
 <template>
-  <footer>
-    <p class="footer-text">
-      <strong>Bekzod Mirahmedov</strong> &copy; &nbsp;
-      {{ new Date().getFullYear() }}
-    </p>
-  </footer>
+  <footer>Live Resume @ <a href="https://www.bootstrapdash.com" target="_blank"
+      rel="noopener noreferrer">BootstrapDash</a>. All Rights Reserved 2020</footer>
 </template>
 
-<style scoped>
+<!-- <style scoped>
 footer {
   grid-area: footer;
   background-color: bisque;
@@ -17,4 +13,4 @@ footer {
   align-items: center;
   margin-top: auto;
 }
-</style>
+</style> -->

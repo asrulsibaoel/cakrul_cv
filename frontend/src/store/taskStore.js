@@ -4,6 +4,7 @@ import axios from "@/axios"
 import { trackTaskCreatedGA, trackTaskDeletedGA, trackTaskCheckedUncheckedGA, trackTaskEditedGA, trackTaskDraggedGA } from '@/gaUtils';
 
 
+
 export const useTaskStore = defineStore("tasks", {
   state: () => ({
     currentDate: new Date().toISOString().slice(0, 10),
