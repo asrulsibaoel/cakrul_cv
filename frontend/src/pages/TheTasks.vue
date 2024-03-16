@@ -1,6 +1,5 @@
 <template>
   <div class="grid-container">
-    <the-header class="header" />
     <div class="grid-item-todo">
       <post-it>
         <div v-if="currentTasks.length === 0" class="no-tasks" style="display: flex; flex-direction: column">
@@ -73,7 +72,6 @@
         </p>
       </div>
     </div>
-    <the-footer class="footer" />
   </div>
 </template>
 

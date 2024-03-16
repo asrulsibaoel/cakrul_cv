@@ -24,6 +24,7 @@
 <!--            <a href="/blog" class="nav-link {% if is_blog == True %}active {% endif %}">BLOG</a>-->
           <a href="/contact" class="nav-link active">CONTACT</a>
       </nav>
+      <button class="button-74" @click="authStore.logout()">Logout</button>
       <button class="btn btn-menu-toggle btn-white rounded-circle" data-toggle="collapsible-nav"
           data-target="collapsible-nav"><img src="/src/assets/images/hamburger.svg" alt="hamburger"></button>
   </header>
