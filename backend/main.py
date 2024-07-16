@@ -3,9 +3,9 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from backend.database import engine
-from backend.models import metadata
-from backend.routers import authentication, task, user
+from database import engine
+from models import metadata
+from routers import authentication, task, user
 
 
 @asynccontextmanager

@@ -3,11 +3,11 @@ from datetime import date
 from fastapi import APIRouter, Depends, HTTPException, Response, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from backend.auth import get_current_user
-from backend.database import get_async_session
-from backend.models import User
-from backend.repositories.task_repo import TaskRepository
-from backend.schemas import (
+from auth import get_current_user
+from database import get_async_session
+from models import User
+from repositories.task_repo import TaskRepository
+from schemas import (
     CreateTaskSchema,
     DisplayTaskSchema,
     UpdateTaskPrioritiesSchema,

@@ -1,9 +1,9 @@
 from sqlalchemy import or_, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from backend.models import User
-from backend.schemas import UserCreate
-from backend.utils import get_hashed_password, verify_hashed_password
+from models import User
+from schemas import UserCreate
+from utils import get_hashed_password, verify_hashed_password
 
 
 class UserRepository:

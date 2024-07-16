@@ -7,14 +7,14 @@ from fastapi.encoders import jsonable_encoder
 from fastapi.security.oauth2 import OAuth2PasswordRequestForm
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from backend.auth import create_access_token, create_refresh_token
-from backend.config import settings
-from backend.database import get_async_session
-from backend.repositories.user_repo import UserRepository
-from backend.schemas import RefreshTokenSchema
+from auth import create_access_token, create_refresh_token
+from config import settings
+from database import get_async_session
+from repositories.user_repo import UserRepository
+from schemas import RefreshTokenSchema
 
 if TYPE_CHECKING:
-    from backend.models import User
+    from models import User
 
 
 router = APIRouter(prefix="/user", tags=["user"])

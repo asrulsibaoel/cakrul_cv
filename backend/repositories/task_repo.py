@@ -4,8 +4,8 @@ from fastapi import HTTPException, status
 from sqlalchemy import and_, select, update
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from backend.models import Task, User
-from backend.schemas import CreateTaskSchema, UpdateTaskSchema
+from models import Task, User
+from schemas import CreateTaskSchema, UpdateTaskSchema
 
 
 class TaskRepository:
