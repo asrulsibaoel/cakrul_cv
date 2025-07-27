@@ -4,6 +4,7 @@ const TheHome = () => import("./pages/TheHome.vue");
 const TheLogin = () => import("@/pages/TheLogin.vue");
 const TheLogout = () => import("@/pages/TheLogout.vue");
 const TheRegistration = () => import("./pages/TheRegistration.vue");
+const TheAds = () => import("./pages/TheAds.vue");
 const TheDemo = () => import("./pages/TheDemo.vue");
 const NotFound = () => import("./pages/NotFound.vue");
 
@@ -36,6 +37,11 @@ const routes = [
     path: "/demo",
     name: "Demo",
     component: TheDemo,
+  },
+  {
+    path: "/ads.txt",
+    name: "Ads",
+    component: TheAds,
   },
   { path: "/:notFound(.*)", component: NotFound },
 ];
