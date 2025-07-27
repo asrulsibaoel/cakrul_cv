@@ -14,7 +14,7 @@ import { defineAsyncComponent } from "vue";
 
 import { useAuthStore } from "@/store/authStore";
 
-const TheDashboard = defineAsyncComponent(() => import("./TheDashboard.vue"));
+// const TheDashboard = defineAsyncComponent(() => import("./TheDashboard.vue"));
 const TheCV = defineAsyncComponent(() => import("./TheCV.vue"));
 const TheTasks = defineAsyncComponent(() => import("./TheTasks.vue"));
 

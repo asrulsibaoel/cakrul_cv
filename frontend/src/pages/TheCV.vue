@@ -17,13 +17,13 @@
                 <h2 class="section-title">EDUCATION</h2>
                 <ul class="time-line">
                     <li class="time-line-item">
-                        <span class="badge badge-primary">2016 - Present</span>
+                        <span class="badge badge-primary">2016 - 2021</span>
                         <h6 class="time-line-item-title">Bachelor of Computer Science</h6>
                         <p class="time-line-item-subtitle">COMPUTER SCIENCE, Sekolah Tinggi Informatika dan Komputer
-                            Indonesia (STIKI) Malang</p>
+                            Indonesia (STIKI) Malang.</p>
                         <p class="time-line-item-content">A Student of STIKI Malang which have some achievements like
                             National Finalist of Android App Development in 2017,
-                            Speaker of International Workshop in Penang, Malaysia. also have 3.5 GPA.</p>
+                            Speaker of International Workshop in Penang, Malaysia. also have 3.68 GPA.</p>
                     </li>
                     <li class="time-line-item">
                         <span class="badge badge-primary">2013 - 2014</span>
@@ -63,6 +63,16 @@
                 <h6 class="section-subtitle">RESUME</h6>
                 <h2 class="section-title">Experience</h2>
                 <ul class="time-line">
+                    <li class="time-line-item">
+                        <span class="badge badge-primary">Jun 2020 - Feb 2021</span>
+                        <h6 class="time-line-item-title">Research Engineer</h6>
+                        <p class="time-line-item-subtitle">Kata.ai</p>
+                        <p class="time-line-item-content">Successfully built Machine Learning System which focused in
+                            Natural
+                            Language Processing (NLP). Using Python as main programming language and machine learning
+                            tools
+                            such as MarianMT, NLTK, Numpy, Pytorch, Tensorflow and so on.</p>
+                    </li>
                     <li class="time-line-item">
                         <span class="badge badge-primary">Jun 2020 - Feb 2021</span>
                         <h6 class="time-line-item-title">Research Engineer</h6>
