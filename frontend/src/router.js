@@ -39,9 +39,7 @@ const routes = [
     component: TheDemo,
   },
   {
-    path: "/ads.txt",
-    name: "Ads",
-    component: TheAds,
+    path: "/ads.txt"
   },
   { path: "/:notFound(.*)", component: NotFound },
 ];
